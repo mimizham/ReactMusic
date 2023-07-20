@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 import {
   View,
@@ -28,6 +28,7 @@ export default AlbumArt;
 
 const { width, height } = Dimensions.get('window');
 const imageSize = width - 48;
+const [musicurl,useMusicUrl] = useState('dd');
 
 const styles = StyleSheet.create({
   container: {
